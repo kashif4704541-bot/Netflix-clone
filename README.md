@@ -25,4 +25,4 @@ This is a frontend clone for learning purposes. All images and logos are owned b
 ## 👨‍💻 Author
 
 **Shaheer Kashif**  
-[GitHub Profile](https://github.com/your-username)
+[GitHub Profile][https://github.com/kashif4704541-bot]
