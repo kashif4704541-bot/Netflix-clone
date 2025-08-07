@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+/* front web page  */
+.main {
+    background: url(https://raw.githubusercontent.com/CodeWithHarry/Sigma-Web-Dev-Course/refs/heads/main/Video%2053/assets/images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1150px, 100vw);
+    height: 644px;
+    position: relative;
+
+}
+
+.main .box {
+    min-height: 644px;
+    width: 100%;
+    opacity: 0.72;
+    background-color: black;
+    position: absolute;
+    top: 0;
+
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    /* padding-right: 74px; */
+}
+
+nav img {
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    position: relative;
+    gap: 10px;
+    padding: 0 30px;
+}
+
+.text2 {
+    position: relative;
+    bottom: 20px;
+}
+
+.text4 {
+    margin-top: 30px;
+}
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 800;
+    font-size: 44px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero> :nth-child(4) {
+    font-weight: 300;
+    font-size: 17px;
+    text-align: center;
+}
+
+.email {
+    border: 1px solid #888;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 60px;
+    width: 450px;
+    /* position: relative;
+    right: 10px; */
+    padding: 7px;
+    opacity: 8.4;
+    color: white;
+    font-size: medium;
+    cursor: auto;
+    
+
+}
+
+.email::placeholder {
+    color: #ccc;
+    font-size: 14px;
+    padding: 7px 101px 8px 14px;
+
+}
+
+.startbtn {
+    height: 70px;
+    width: 180px;
+
+    margin-left: 10px;
+    background-color: red;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.signInbtn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 72px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+.lang{
+    height: 30px;
+    width: 60px;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 7px;
+    
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+
+/* first webpage  */
+section{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 50px;
+    
+}
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+section.first>div:nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+    line-height: 2.5
+}
+section.first>div :nth-child(2) {
+    font-size: 24px;
+
+}
+span{
+    color: white;
+}
+
+
+.firstImg {
+    position: relative;
+}
+
+.firstImg img {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.firstImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 100%;
+}
+
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+    section.first>div:nth-child(1) span:nth-child(1) {
+        font-size: 36px;
+    }
+
+    section.first>div:nth-child(1) span:nth-child(2) {
+        font-size: 20px;
+    }
+
+    .firstImg video {
+        top: 40px;
+    }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 600px) {
+    section.first>div:nth-child(1) span:nth-child(1) {
+        font-size: 28px;
+    }
+
+    section.first>div:nth-child(1) span:nth-child(2) {
+        font-size: 16px;
+    }
+
+    .firstImg video {
+        top: 30px;
+    }
+}
+
+
+/* second webpage  */
+.secondImg img {
+    
+    max-width: 100%;
+}
+@media (max-width: 768px) {
+    .second {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .second div {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+
+.secText>span:nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+    display: block;
+}
+.secText>span:nth-child(2) {
+    font-size: 24px;
+    display: block;
+    margin-top: 25px;
+}
+
+
+/* third webpage  */
+section.third>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+section.third>div:nth-child(1) span:nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+    line-height: 2.5;
+}
+section.third>div:nth-child(1) span:nth-child(2) {
+    font-size: 24px;
+}
+
+.thirdImg {
+    position: relative;
+}
+
+.thirdImg img {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.thirdImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 100%;
+}
+
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+    section.third>div:nth-child(1) span:nth-child(1) {
+        font-size: 36px;
+    }
+
+    section.third>div:nth-child(1) span:nth-child(2) {
+        font-size: 20px;
+    }
+
+    .thirdImg video {
+        top: 40px;
+    }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 600px) {
+    section.third>div:nth-child(1) span:nth-child(1) {
+        font-size: 28px;
+    }
+
+    section.third>div:nth-child(1) span:nth-child(2) {
+        font-size: 16px;
+    }
+
+    .thirdImg video {
+        top: 30px;
+    }
+}
+
+
+/* fourth web page  */
+.fourthImg img {
+    
+    max-width: 100%;
+}
+@media (max-width: 768px) {
+    .fourth {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fourth div {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+
+.fourthText>span:nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+    display: block;
+}
+.fourthText>span:nth-child(2) {
+    font-size: 24px;
+    display: block;
+    margin-top: 25px;
+}
+
+/* Frequently Asked questions */
+
+.faqs {
+    background-color: black;
+    padding: 34px;
+    color: white;
+    display: block; /* Override section flex */
+}
+
+.faqs h2 {
+    text-align: center;
+    font-size: 48px;
+    padding: 34px;
+    display: block;
+    width: 100%;
+}
+
+.faqbox {
+    background-color: rgb(80, 76, 76);
+    display: flex; /* Change from block to flex */
+    justify-content: space-between; /* Puts span on left and SVG on right */
+    align-items: center; /* Vertically center both items */
+    padding: 32px;
+    max-width: 60vw;
+    margin: 10px auto;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
